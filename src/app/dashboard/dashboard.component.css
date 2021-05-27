@@ -1,0 +1,25 @@
+h3.flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  /* check it on canisue.com */
+  
+  h3.tAl {
+    text-align: justify;
+    text-align-last: justify;
+  }
+  
+  
+  /* oldest browsers such as IE8 */
+  
+  h3.tA {
+    text-align: justify;
+  }
+  
+  h3.tA:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
