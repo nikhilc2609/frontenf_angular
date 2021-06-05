@@ -3,20 +3,43 @@
   <span>Score = {{user.score}}</span>
 </h3>
 <div class="container">
-<p>button1</p>
-<button (click)="ticketOne()" class="btn btn-primary btn-block">
-    1T
-  </button>
-<!-- </div> -->
-<!-- <div class="card card-container"> -->
-    <p>button2</p>
-    <button (click)="ticketFive()" class="btn btn-primary btn-block">
-        5T
-      </button>
-<!-- </div> -->
-<!-- <div class="card card-container"> -->
-    <p>button3</p>
+  <div class="row">
+    <div class="col-sm">
+      <p>When you click on 1 Ticket The Probability of </p>
+      <p>getting score from 1 to 20 is 80%</p>
+      <p>getting score from 20 to 100 is 15%</p>
+      <p>getting score from 100 to 180 is 5%</p>
+      <p>getting score from 180 to 200 is 0%</p>
+        <button (click)="ticketOne()" class="btn btn-primary btn-block">
+          1 Ticket
+          </button>
+    </div>
+    <div class="col-sm">
+      <p>When you click on 5 Ticket The Probability of </p>
+      <p>getting score from 1 to 20   is 20% </p>
+      <p>getting score from 20 to 100  is 40%</p>
+      <p>getting score from 100 to 180 is 30%</p>
+      <p>getting score from 180 to 200  is 10%</p>
+      <button (click)="ticketFive()" class="btn btn-primary btn-block">
+        5 Ticket
+        </button>
+    </div>
+    <div class="col-sm">
+      <p>When you click on 10 Ticket The Probability of</p>
+      <p>getting score from 1 to 20   is 0%</p>
+      <p>getting score from 20 to 100  is 10%</p>
+      <p>getting score from 100 to 180 is 20%</p>
+      <p>getting score from 180 to 200  is 70%</p>
     <button (click)="ticketTen()" class="btn btn-primary btn-block">
-        10T
+        10 Ticket
+      </button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <p>You will get 20 free tickets for every one hour</p>
+    <button (click)="getTicket()" class="btn btn-primary btn-block">
+        Get Free Tickets
       </button>
 </div>

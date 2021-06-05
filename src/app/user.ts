@@ -5,4 +5,5 @@ export class User {
     // password: string;
     ticket: number;
     score: number;
+    time:number;
 }
