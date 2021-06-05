@@ -8,9 +8,10 @@ import { User } from '../user';
 })
 export class TopscoreService {
   constructor(private http: HttpClient) { }
-  private TOP_API ="http://localhost:8080/get/topscore";
-  private USER_API ="http://localhost:8080/get/user";
-  private SCORE_API="http://localhost:8080/update/ticketandscore";
+  private API="https://springboot-probability.herokuapp.com";
+  private TOP_API =this.API+"/get/topscore";
+  private USER_API =this.API+"/get/user";
+  private SCORE_API=this.API+"/update/ticketandscore";
 
   topscore(): Observable<User[]> {
     return this.http.get<User[]>(`${this.TOP_API}`);
